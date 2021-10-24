@@ -6,15 +6,78 @@
     <title>Survey</title>
   </head>
   <form action="https://em-urgent.herokuapp.com/forms/results" method="post">
-    <p>Are these symptoms you would normally feel comfortable addressing with a primary care doctor?</p>
+    <p>
+      Are these symptoms you would normally feel comfortable addressing with a
+      primary care doctor?
+    </p>
     <div>
-      <input type="radio" id="contactChoice1"
-       name="primary_care" value="yes">
+      <input type="radio" id="contactChoice1" name="primary_care" value="yes" />
       <label for="contactChoice1">Yes</label>
-  
-      <input type="radio" id="contactChoice2"
-       name="primary_care" value="no">
+
+      <input type="radio" id="contactChoice2" name="primary_care" value="no" />
       <label for="contactChoice2">No</label>
+    </div>
+    <div>
+      <label for="name">What is your age?:</label>
+      <input type="text" id="age" name="age" />
+    </div>
+    <p>What is your biological sex?</p>
+    <div>
+      <input type="radio" id="sex_male" name="sex" value="male" />
+      <label for="sex_male">Male</label>
+
+      <input type="radio" id="sex_female" name="sex" value="female" />
+      <label for="sex_female">Female</label>
+
+      <input type="radio" id="sex_other" name="sex" value="other" />
+      <label for="sex_other">Other</label>
+    </div>
+    <p>What is your temperature?</p>
+    <div>
+      <input type="radio" id="low_temp" name="temp" value="low" />
+      <label for="low_temp">Less than 97 degrees></label>
+
+      <input type="radio" id="norm_temp" name="temp" value="normal" />
+      <label for="norm_temp">Between 97 and 100 degrees</label>
+
+      <input type="radio" id="high_temp" name="temp" value="high" />
+      <label for="high_temp">Higher than 100 degrees</label>
+    </div>
+    <p>What is your heart rate?</p>
+    <div>
+      <input type="radio" id="low_rate" name="rate" value="low" />
+      <label for="low_rate">Less than 60 beats per minute></label>
+
+      <input type="radio" id="norm_rate" name="rate" value="normal" />
+      <label for="norm_rate">60 to 100 beats per minute</label>
+
+      <input type="radio" id="high_rate" name="rate" value="high" />
+      <label for="high_rate"
+        >More than 100 beats per minute or your heart is racing faster than
+        normal</label
+      >
+    </div>
+    <p>What is your respiratory(breathing) rate?</p>
+    <div>
+      <input type="radio" id="low_breath" name="breath" value="low" />
+      <label for="low_breath">Breathing slower/less than normal</label>
+
+      <input type="radio" id="norm_breath" name="breath" value="normal" />
+      <label for="norm_breath">Breathing normally</label>
+
+      <input type="radio" id="high_breath" name="breath" value="high" />
+      <label for="high_breath">Breathing quickly/quicker than normal</label>
+    </div>
+    <p>What is your blood pressure?</p>
+    <div>
+      <input type="radio" id="systolic" name="pressure" value="systolic" />
+      <label for="systolic">Systolic:: Blood Pressure between 90-120</label>
+
+      <input type="radio" id="diastolic" name="pressure" value="diastolic" />
+      <label for="diastolic">Diastolic:: Blood Pressure between 60-80</label>
+
+      <input type="radio" id="unkown" name="pressure" value="unknown" />
+      <label for="unkown">Don't know</label>
     </div>
     <div>
       <button type="submit">Submit</button>
