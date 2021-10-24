@@ -8,6 +8,8 @@ const port = process.env.PORT;
 
 app.use(express.static(path.join(__dirname, "public")));
 
+app.get("/forms/results", (req, res) => {res.send("OK")});
+
 app.post("/forms/results", (req, res) => {});
 
 app.listen(port);
