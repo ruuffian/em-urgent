@@ -1,0 +1,24 @@
+{
+  "name": "jefferson-health-hackathon",
+  "version": "1.0.0",
+  "description": "This is an entry into the Jefferson Health Hack of 2020. The goal of this project is to reduce the load on emergency rooms by directing patients who are not in life-threatening situations to Urgent Care.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ruuffian/jefferson-health-hackathon.git"
+  },
+  "author": "Liam Mackay",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ruuffian/jefferson-health-hackathon/issues"
+  },
+  "homepage": "https://github.com/ruuffian/jefferson-health-hackathon#readme",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "path": "^0.12.7"
+  }
+}
