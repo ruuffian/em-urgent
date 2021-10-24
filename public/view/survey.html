@@ -44,6 +44,22 @@
       <label for="high_temp">Higher than 100 degrees</label>
     </div>
     <p>What is your heart rate?</p>
+    <p>
+      1. Place your pointer and middle fingers on the inside of your opposite
+      wrist just below the thumb.
+    </p>
+    <p>
+      2. Don’t use your thumb to check your pulse, as the artery in your thumb
+      can make it harder to count accurately.
+    </p>
+    <p>
+      3. Once you can feel your pulse, count how many beats you feel in 15
+      seconds.
+    </p>
+    <p>
+      4. Multiply this number by 4 to get your heart rate. For instance, 20
+      beats in 15 seconds equals a heart rate of 80 beats per minute (bpm).
+    </p>
     <div>
       <input type="radio" id="low_rate" name="rate" value="low" />
       <label for="low_rate">Less than 60 beats per minute></label>
@@ -70,11 +86,50 @@
     </div>
     <p>What is your blood pressure?</p>
     <div>
-      <input type="radio" id="systolic" name="pressure" value="systolic" />
+      <input type="radio" id="systolic" name="pressure" value="norm_systolic" />
       <label for="systolic">Systolic:: Blood Pressure between 90-120</label>
+      <input
+        type="radio"
+        id="low_systolic"
+        name="pressure"
+        value="low_systolic"
+      />
+      <label for="low_systolic">Systolic:: Blood Pressure below 90</label>
 
-      <input type="radio" id="diastolic" name="pressure" value="diastolic" />
-      <label for="diastolic">Diastolic:: Blood Pressure between 60-80</label>
+      <input
+        type="radio"
+        id="high_systolic"
+        name="pressure"
+        value="high_systolic"
+      />
+
+      <label for="high_systolic"
+        >Systolic:: Blood Pressure higher than 120</label
+      >
+
+      <input
+        type="radio"
+        id="norm_diastolic"
+        name="pressure"
+        value="norm_diastolic"
+      />
+      <label for="norm_diastolic"
+        >Diastolic:: Blood Pressure between 60-80</label
+      >
+      <input
+        type="radio"
+        id="high_diastolic"
+        name="pressure"
+        value="high_diastolic"
+      />
+      <label for="high_diastolic">Diastolic:: Blood Pressure above 80</label>
+      <input
+        type="radio"
+        id="low_diastolic"
+        name="pressure"
+        value="low_diastolic"
+      />
+      <label for="low_diastolic">Diastolic:: Blood Pressure below 60</label>
 
       <input type="radio" id="unkown" name="pressure" value="unknown" />
       <label for="unkown">Don't know</label>
