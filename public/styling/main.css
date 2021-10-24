@@ -542,9 +542,9 @@
 }
 
 .staff__img--card {
-  background-image: url(../assets/headshot.jpg);
+  /* background-image: url(../assets/headshot.jpg);
   background-size: 100%;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
   margin: auto;
   height: 100px;
   width: 100px;
