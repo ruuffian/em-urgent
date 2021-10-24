@@ -495,7 +495,7 @@
 
 /* Services Section */
 
-.services {
+.staff {
   background: #131313;
   display: flex;
   flex-direction: column;
@@ -505,7 +505,7 @@
   padding: 10rem 0;
 }
 
-.services h1 {
+.staff h1 {
   background-color: #ff8177;
   background-image: linear-gradient(to right, #ff0844 0%, #ffb199 100%);
   background-size: 100%;
@@ -518,13 +518,13 @@
   font-size: 2.5rem;
 }
 
-.services__wrapper {
+.staff__wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr;
 }
 
-.services__card {
+.staff__card {
   margin: 10px;
   height: 425px;
   width: 300px;
@@ -537,7 +537,23 @@
   transition: 0.3s ease-in;
 }
 
-.services__card:nth-child(n) {
+.staff__img--container {
+  text-align: center;
+}
+
+.staff__img--card {
+  background-image: url(../assets/headshot.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin: auto;
+  height: 100px;
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+}
+.staff__card:nth-child(n) {
   background: #c0392b; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to top,
@@ -551,17 +567,34 @@
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.services__card h2 {
+.staff__card h2 {
   text-align: center;
 }
 
-.services__card p {
+.staff__card p {
   text-align: center;
   margin-top: 24px;
   font-size: 20px;
 }
+.staff__card:hover {
+  transform: scale(1.075);
+  transition: 0.3s ease-in;
+  cursor: pointer;
+}
 
-.services__btn {
+@media screen and (max-width: 1300px) {
+  .staff__wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .staff__wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* .services__btn {
   display: flex;
   justify-content: center;
   margin-top: 16px;
@@ -579,25 +612,7 @@
 
 .services__card button:hover {
   cursor: pointer;
-}
-
-.services__card:hover {
-  transform: scale(1.075);
-  transition: 0.3s ease-in;
-  cursor: pointer;
-}
-
-@media screen and (max-width: 1300px) {
-  .services__wrapper {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .services__wrapper {
-    grid-template-columns: 1fr;
-  }
-}
+} */
 
 /* Footer Section */
 
