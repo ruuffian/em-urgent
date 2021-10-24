@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Test Website</title>
+    <title>em-urgent Portal</title>
     <link rel="stylesheet" href="styling/main.css" />
     <link
       rel="stylesheet"
@@ -13,12 +13,15 @@
     />
   </head>
   <body>
-
     <!-- Navigation Bar -->
 
     <nav class="navbar">
       <div class="navbar__container">
-        <a href="#home" id="navbar__logo">COLOR</a>
+        <a href="#home" id="navbar__logo"
+          ><i class="fas fa-star-of-life"></i>
+
+          em-urgent</a
+        >
         <div class="navbar__toggle" id="mobile-menu">
           <span class="bar"></span>
           <span class="bar"></span>
@@ -31,13 +34,13 @@
           <li class="navbar__item">
             <a href="#about" class="navbar__links" id="about-page">About</a>
           </li>
-          <li class="navbar__item">
+          <!-- <li class="navbar__item">
             <a href="#services" class="navbar__links" id="services-page"
               >Services</a
             >
-          </li>
+          </li> -->
           <li class="navbar__btn">
-            <a href="#sign-up" class="button" id="signup">Sign Up</a>
+            <a href="#survey" class="button" id="survey">Take Survey</a>
           </li>
         </ul>
       </div>
@@ -47,8 +50,10 @@
 
     <div class="hero" id="home">
       <div class="hero__container">
-        <h1 class="hero__heading">Choose your <span>colors</span></h1>
-        <p class="hero__description">Unlimited Possibilities</p>
+        <h1 class="hero__heading">
+          Recieve the correct <span>care</span>, <em>fast</em>.
+        </h1>
+        <p class="hero__description"></p>
         <button class="main__btn"><a href="#">Explore</a></button>
       </div>
     </div>
@@ -58,20 +63,23 @@
     <div class="main" id="about">
       <div class="main__container">
         <div class="main__img--container">
-          <div class="main__img--card"><i class="fas fa-layer-group"></i></div>
+          <div class="main__img--card"><i class="fas fa-hospital"></i></div>
         </div>
         <div class="main__content">
           <h1>What do we do?</h1>
-          <h2>We help businesses scale.</h2>
-          <p>Schedule a call to learn more about our services.</p>
-          <button class="main__btn"><a href="#">Schedule Call</a></button>
+          <h2>We assist patients in deciding which care centers to visit</h2>
+          <p>
+            The importance of choosing to go to urgent care or the emergency
+            room cannot be understated
+          </p>
+          <!-- <button class="main__btn"><a href="#"></a></button> -->
         </div>
       </div>
     </div>
 
     <!-- Services Section -->
 
-    <div class="services" id="services">
+    <!-- <div class="services" id="services">
       <h1>Our Services</h1>
       <div class="services__wrapper">
         <div class="services__card">
@@ -95,17 +103,17 @@
           <div class="services__btn"><button>Get Started</button></div>
         </div>
       </div>
-    </div>
+    </div> -->
 
-    <!-- Sign-Up Section -->
+    <!-- Survey Section -->
 
-    <div class="main" id="sign-up">
+    <div class="main" id="survey">
       <div class="main__container">
         <div class="main__content">
-          <h1>Join Our Team</h1>
-          <h2>Sign Up Today</h2>
-          <p>See what makes us different</p>
-          <button class="main__btn"><a href="#">Sign Up</a></button>
+          <h1>Get the correct care</h1>
+          <h2>Seek Help Now</h2>
+          <p></p>
+          <button class="main__btn"><a href="#">Take Survey</a></button>
         </div>
         <div class="main__img--container">
           <div class="main__img--card" id="card-2">
@@ -122,41 +130,40 @@
         <div class="footer__link--wrapper">
           <div class="footer__link--items">
             <h2>About Us</h2>
-            <a href="/sign-up">How It Works</a>
-            <a href="/sign-up">Testimonials</a>
-            <a href="/sign-up">Careers</a>
-            <a href="/sign-up">Terms of Service</a>
+            <a href="/staff">Our Staff</a>
+            <a href="/mission">Our Mission</a>
+            <a href="/contact">Contact Us</a>
           </div>
-          <div class="footer__link--items">
-            <h2>Contact Us</h2>
-            <a href="/">Contact</a>
-            <a href="/">Support</a>
-            <a href="/">Destinations</a>
-          </div>
+          <!-- <div class="footer__link--items">
+            <h2>The Problem at Hand</h2>
+            <a href="/">What We See</a>
+            <a href="/">What We Do</a>
+            <a href="/">Further Reading</a>
+          </div> -->
         </div>
         <div class="footer__link--wrapper">
           <div class="footer__link--items">
             <h2>Social Media</h2>
-            <a href="/facebook">Facebook</a>
-            <a href="/twitter">Twitter</a>
-            <a href="/instagram">Instagram</a>
-            <a href="/youtube">Youtube</a>
+            <a href="/view/facebook">Facebook</a>
+            <a href="/view/twitter">Twitter</a>
+            <a href="/view/instagram">Instagram</a>
+            <a href="/view/youtube">Youtube</a>
           </div>
-          <div class="footer__link--items">
+          <!-- <div class="footer__link--items">
             <h2>Videos</h2>
             <a href="/">Submit Videos</a>
             <a href="/">Ambassadors</a>
             <a href="/">Agency</a>
-          </div>
+          </div> -->
         </div>
       </div>
       <section class="social__media">
         <div class="social__media--wrap">
           <div class="footer__logo">
-            <a href="/" id="footer__logo">Jefferson Health Hack</a>
+            <a href="/" id="footer__logo">em-urgent</a>
           </div>
           <p class="website__rights">
-            © Jefferson Health Hack 2020. All rights reserved
+            © em-urgent 2020. All rights reserved
           </p>
           <div class="social__icons">
             <a href="/" class="social__icons--link" target="_blank"
