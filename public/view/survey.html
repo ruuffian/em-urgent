@@ -4,9 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Survey</title>
+    <link rel="stylesheet" href="styling/survey.css" />
   </head>
   <form action="https://em-urgent.herokuapp.com/forms/results" method="post">
-    <p>
+    <p> 
       Are these symptoms you would normally feel comfortable addressing with a
       primary care doctor?
     </p>
@@ -43,7 +44,10 @@
       <input type="radio" id="high_temp" name="temp" value="high" />
       <label for="high_temp">Higher than 100 degrees</label>
     </div>
-    <p>What is your heart rate?</p>
+    <p>
+      What is your heart rate? To find your heart rate, follow the steps listed
+      below
+    </p>
     <p>
       1. Place your pointer and middle fingers on the inside of your opposite
       wrist just below the thumb.
@@ -134,6 +138,7 @@
       <input type="radio" id="unkown" name="pressure" value="unknown" />
       <label for="unkown">Don't know</label>
     </div>
+
     <div>
       <button type="submit">Submit</button>
     </div>

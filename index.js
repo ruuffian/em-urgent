@@ -8,9 +8,14 @@ const port = process.env.PORT;
 
 app.use(express.static(path.join(__dirname, "public")));
 
-app.get("/forms/results", (req, res) => {res.send("OK")});
+app.get("/forms/results", (req, res) => {
+  res.send("OK");
+});
 
-app.post("/forms/results", (req, res) => {});
+app.post("/forms/results", (req, res) => {
+    req.body.
+  res.send(OK);
+});
 
 app.listen(port);
 console.log(`Server started at http://localhost:${port}`);
